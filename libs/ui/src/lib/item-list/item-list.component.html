@@ -1,0 +1,6 @@
+
+
+<div class="item" *ngFor="let item of items">
+  <p>{{item.description}}</p>
+  <button [attr.code]="item.code" (click)="doAddToCart(item.code)">Add to cart {{item.code}}</button>
+</div>

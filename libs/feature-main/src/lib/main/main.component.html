@@ -1,0 +1,5 @@
+<div class="cart">
+  {{cart.length}} items in the cart
+</div>
+
+<happyorg-item-list [items]="items" (addToCart)="addToCart($event)"></happyorg-item-list>
